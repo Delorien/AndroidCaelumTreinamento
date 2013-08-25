@@ -10,7 +10,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-//teste git
 public class AlunoDAO extends SQLiteOpenHelper {
 	// PARA MAIS DE UMA DAO PESQUISAR O guj DO FELIPE. SOBRE SÓ PODER EXISTIR UM
 	// "sQLITEOPENhLPER"
