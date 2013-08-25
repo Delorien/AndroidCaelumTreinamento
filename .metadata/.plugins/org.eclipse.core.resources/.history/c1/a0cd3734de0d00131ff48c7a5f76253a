@@ -2,8 +2,6 @@ package br.caelum.cadastro.modelo;
 
 public class Aluno {
 
-	//Comentario teste commit
-	
 	private String nome;
 	private String site;
 	private String endereco;
