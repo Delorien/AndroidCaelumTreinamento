@@ -10,10 +10,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-<<<<<<< HEAD
-=======
-//teste git
->>>>>>> bf08452c5312b2f17b416e5f2659b96583d88ef8
 public class AlunoDAO extends SQLiteOpenHelper {
 	// PARA MAIS DE UMA DAO PESQUISAR O guj DO FELIPE. SOBRE SÓ PODER EXISTIR UM
 	// "sQLITEOPENhLPER"
@@ -79,21 +75,5 @@ public class AlunoDAO extends SQLiteOpenHelper {
 	public void deletar(Aluno aluno){
 		String[] args = {aluno.getId().toString()};
 		getWritableDatabase().delete("FJ57", "id=?",args);
-<<<<<<< HEAD
-	}
-
-	public void altera(Aluno aluno) {
-		ContentValues values = new ContentValues();
-		values.put("nome", aluno.getNome());
-		values.put("telefone", aluno.getTelefone());
-		values.put("endereco", aluno.getEndereco());
-		values.put("site", aluno.getSite());
-		values.put("nota", aluno.getNota());
-		values.put("foto", aluno.getFoto());
-		
-		String [] args = {aluno.getId().toString()};
-		getWritableDatabase().update("FJ57", values, "id=?", args);
-=======
->>>>>>> bf08452c5312b2f17b416e5f2659b96583d88ef8
 	}	
 }

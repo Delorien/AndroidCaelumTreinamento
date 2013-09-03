@@ -10,11 +10,14 @@ package br.com.cadastrocaelum;
 public final class R {
     public static final class attr {
     }
+<<<<<<< HEAD
     public static final class color {
         public static final int borda_imagem=0x7f040000;
         public static final int linha_impar=0x7f040002;
         public static final int linha_par=0x7f040001;
     }
+=======
+>>>>>>> bf08452c5312b2f17b416e5f2659b96583d88ef8
     public static final class drawable {
         public static final int ic_enviar=0x7f020000;
         public static final int ic_launcher=0x7f020001;
@@ -26,6 +29,7 @@ public final class R {
         public static final int ic_receber=0x7f020007;
     }
     public static final class id {
+<<<<<<< HEAD
         public static final int botaoInserir=0x7f080007;
         public static final int endereco=0x7f080004;
         public static final int foto=0x7f080001;
@@ -40,10 +44,27 @@ public final class R {
         public static final int nota=0x7f080006;
         public static final int site=0x7f080003;
         public static final int telefone=0x7f080005;
+=======
+        public static final int botaoInserir=0x7f070007;
+        public static final int endereco=0x7f070004;
+        public static final int foto=0x7f070001;
+        public static final int lista=0x7f070000;
+        public static final int menu_enviar_alunos=0x7f07000b;
+        public static final int menu_mapa=0x7f07000a;
+        public static final int menu_novo=0x7f070009;
+        public static final int menu_preferencias=0x7f07000d;
+        public static final int menu_receber_provas=0x7f07000c;
+        public static final int menu_settings=0x7f070008;
+        public static final int nome=0x7f070002;
+        public static final int nota=0x7f070006;
+        public static final int site=0x7f070003;
+        public static final int telefone=0x7f070005;
+>>>>>>> bf08452c5312b2f17b416e5f2659b96583d88ef8
     }
     public static final class layout {
         public static final int activity_lista_alunos=0x7f030000;
         public static final int formulario=0x7f030001;
+<<<<<<< HEAD
         public static final int item=0x7f030002;
     }
     public static final class menu {
@@ -67,6 +88,30 @@ public final class R {
         public static final int labelTelefone=0x7f050006;
         public static final int menu_settings=0x7f050002;
         public static final int title_activity_formulario=0x7f050003;
+=======
+    }
+    public static final class menu {
+        public static final int activity_lista_alunos=0x7f060000;
+        public static final int formulario=0x7f060001;
+        public static final int menu_principal=0x7f060002;
+    }
+    public static final class string {
+        public static final int app_name=0x7f040000;
+        public static final int hello_world=0x7f040001;
+        public static final int hintEndereco=0x7f04000d;
+        public static final int hintNome=0x7f04000e;
+        public static final int hintNota=0x7f04000a;
+        public static final int hintSite=0x7f04000b;
+        public static final int hintTelefone=0x7f04000c;
+        public static final int labelBotaoInserir=0x7f040008;
+        public static final int labelEndereco=0x7f040007;
+        public static final int labelNome=0x7f040004;
+        public static final int labelNota=0x7f040009;
+        public static final int labelSite=0x7f040005;
+        public static final int labelTelefone=0x7f040006;
+        public static final int menu_settings=0x7f040002;
+        public static final int title_activity_formulario=0x7f040003;
+>>>>>>> bf08452c5312b2f17b416e5f2659b96583d88ef8
     }
     public static final class style {
         /** 
@@ -90,10 +135,18 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
+<<<<<<< HEAD
         public static final int AppBaseTheme=0x7f060000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f060001;
+=======
+        public static final int AppBaseTheme=0x7f050000;
+        /**  Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
+         */
+        public static final int AppTheme=0x7f050001;
+>>>>>>> bf08452c5312b2f17b416e5f2659b96583d88ef8
     }
 }

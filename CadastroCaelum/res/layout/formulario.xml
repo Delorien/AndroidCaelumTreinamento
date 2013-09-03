@@ -10,7 +10,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+<<<<<<< HEAD
         android:src="@drawable/ic_launcher" />
+=======
+        android:src="@drawable/ic_launcher" android:contentDescription="TODO"/>
+>>>>>>> bf08452c5312b2f17b416e5f2659b96583d88ef8
 
     <TextView
         android:layout_width="match_parent"

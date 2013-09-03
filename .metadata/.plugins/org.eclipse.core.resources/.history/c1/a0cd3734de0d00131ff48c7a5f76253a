@@ -1,20 +1,7 @@
 package br.caelum.cadastro.modelo;
 
-<<<<<<< HEAD
-import java.io.Serializable;
-
-public class Aluno implements Serializable {
-
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-=======
 public class Aluno {
 
-	//Comentario teste commit
-	
->>>>>>> bf08452c5312b2f17b416e5f2659b96583d88ef8
 	private String nome;
 	private String site;
 	private String endereco;

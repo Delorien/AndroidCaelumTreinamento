@@ -4,10 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.caelum.cadastro.modelo.Aluno;
+<<<<<<< HEAD
 import br.com.caelum.cadastro.adapter.ListaAlunosAdapter;
 import br.com.caelum.cadastro.dao.AlunoDAO;
 import android.R.anim;
 import android.net.Uri;
+=======
+import br.com.caelum.cadastro.dao.AlunoDAO;
+import android.R.anim;
+>>>>>>> bf08452c5312b2f17b416e5f2659b96583d88ef8
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -31,7 +36,10 @@ public class ListaAlunos extends Activity {
 
 	private ListView lista;
 	private Aluno alunoSelecionado;
+<<<<<<< HEAD
 	private List<Aluno> alunos;
+=======
+>>>>>>> bf08452c5312b2f17b416e5f2659b96583d88ef8
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -41,14 +49,20 @@ public class ListaAlunos extends Activity {
 		lista = (ListView) findViewById(R.id.lista);
 		registerForContextMenu(lista);
 
+<<<<<<< HEAD
 		lista.setOnItemClickListener(new OnItemClickListener() { // Classe
 																	// anonima
+=======
+		lista.setOnItemClickListener(new OnItemClickListener() {
+
+>>>>>>> bf08452c5312b2f17b416e5f2659b96583d88ef8
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int pos,
 					long arg3) {
 				Toast.makeText(ListaAlunos.this, "Posicao " + pos,
 						Toast.LENGTH_SHORT).show();
 
+<<<<<<< HEAD
 				Intent edicao = new Intent(ListaAlunos.this,
 						FormularioActivity.class);
 
@@ -56,6 +70,8 @@ public class ListaAlunos extends Activity {
 
 				edicao.putExtra("aluno", alunoSelecionado);
 				startActivity(edicao);
+=======
+>>>>>>> bf08452c5312b2f17b416e5f2659b96583d88ef8
 			}
 		});
 
@@ -83,6 +99,7 @@ public class ListaAlunos extends Activity {
 
 	public void carregaLista() {
 		AlunoDAO dao = new AlunoDAO(this);
+<<<<<<< HEAD
 		alunos = dao.getLista();
 		dao.close();
 
@@ -90,6 +107,13 @@ public class ListaAlunos extends Activity {
 		/*
 		ArrayAdapter<Aluno> adapter = new ArrayAdapter<Aluno>(ListaAlunos.this,
 				android.R.layout.simple_list_item_1, alunos);*/
+=======
+		List<Aluno> alunos = dao.getLista();
+		dao.close();
+
+		ArrayAdapter<Aluno> adapter = new ArrayAdapter<Aluno>(ListaAlunos.this,
+				android.R.layout.simple_list_item_1, alunos);
+>>>>>>> bf08452c5312b2f17b416e5f2659b96583d88ef8
 
 		lista.setAdapter(adapter);
 	}
@@ -130,6 +154,7 @@ public class ListaAlunos extends Activity {
 		MenuItem deletar = menu.add("Deletar");
 		MenuItem enviarEMail = menu.add("Enviar Email");
 
+<<<<<<< HEAD
 		Intent intentLigar = new Intent(Intent.ACTION_CALL); //intent implicita
 		intentLigar.setData(Uri.parse("tel:" + alunoSelecionado.getTelefone()));
 		ligar.setIntent(intentLigar);
@@ -177,6 +202,28 @@ public class ListaAlunos extends Activity {
 									}
 								}).setNegativeButton("Nao", null).show();
 
+=======
+		deletar.setOnMenuItemClickListener(new OnMenuItemClickListener() {
+			
+			@Override
+			public boolean onMenuItemClick(MenuItem item) {
+				
+				new AlertDialog.Builder(ListaAlunos.this)
+				.setIcon(android.R.drawable.ic_dialog_alert)
+				.setTitle("Deletar")
+				.setMessage("Deseja mesmo deletar?")
+				.setPositiveButton("Quero", 
+						new DialogInterface.OnClickListener() {
+							@Override
+							public void onClick(DialogInterface dialog, int which) {
+								AlunoDAO dao = new AlunoDAO(ListaAlunos.this);
+								dao.deletar(alunoSelecionado);
+								dao.close();
+								carregaLista();								
+							}
+						}).setNegativeButton("Nao", null).show();
+						
+>>>>>>> bf08452c5312b2f17b416e5f2659b96583d88ef8
 				return false;
 			}
 		});
